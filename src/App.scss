@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import './reset.scss';
+
+a {
+  text-decoration: none;
+}
+
+$variable: 50px;
+
+.App {
+  font-family: 'Roboto', sans-serif;
+
+  nav {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    font-size: 1.5em;
+    a {
+      &.active {
+        font-weight: bold;
+      }
+      margin: 0 10px;
+    }
+  }
+  main {
+    max-width: 400px;
+    margin: auto;
+    p {
+
+    }
+    .About {
+    }
+  }
+}
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
