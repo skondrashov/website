@@ -18,7 +18,7 @@ customElements.define('flex-right', class FlexRight extends StyledElement {
                 flex-direction: row;
             }
 
-            ::slotted(div) {
+            ::slotted(*) {
                 flex: 1;
             }
         `);
@@ -33,7 +33,7 @@ customElements.define('flex-down', class FlexDown extends StyledElement {
                 flex-direction: column;
             }
 
-            ::slotted(div) {
+            ::slotted(*) {
                 flex: 1;
             }
         `);

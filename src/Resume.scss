@@ -1,0 +1,67 @@
+.Resume {
+  width: calc(100vh*8.5/11); // make aspect ratio like printer paper
+  box-shadow: inset 0px 0px 0px 1px #EEE;
+  border-width: 0 1px;
+  .header {
+    background-color: #420420;
+    color: #FFF;
+    padding: 10px 20px;
+    &:hover {
+      .website {
+        text-decoration: underline;
+      }
+    }
+    .contact {
+      font-size: 1.7em;
+      >div>div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .name {
+      font-size: 3.4em;
+    }
+  }
+  .columns {
+    >*:nth-child(2) {
+      flex: 2;
+    }
+  }
+  .section {
+    line-height: 1.7vh;
+    padding: 0 20px;
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 0 0;
+    }
+    .item {
+      .workplace {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        .project {
+          font-weight: bold;
+        }
+        .dates {
+          font-style: italic;
+        }
+      }
+      ul {
+        li {
+          list-style-position: inside;
+          list-style-type: disc;
+        }
+      }
+      .description {}
+      .nexient-item {
+        .nexient-workplace {}
+        .nexient-description {}
+      }
+    }
+  }
+  hr {
+  }
+}
