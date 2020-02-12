@@ -1,14 +1,15 @@
 nav {
-  padding: 20px 0;
+  padding: 1.5vh 0;
   text-align: center;
   background-color: $dark;
   color: white;
-  font-size: #{'min(5.5vh, 6vw)'};
+  font-size: #{'min(4.5vh, 3.3vw)'};
   flex-right {
+    width: 40vw;
     margin: auto;
-    width: 600px;
+    justify-content: center;
     a {
-      margin: 0 15px;
+      flex:.26;
       &.active {
         font-weight: bold;
       }
