@@ -1,16 +1,20 @@
 nav {
   padding: 20px 0;
   text-align: center;
-  background-color: #420420;
+  background-color: $dark;
   color: white;
-  font-size: 2.1em;
-  a {
-    &.active {
-      font-weight: bold;
+  font-size: #{'min(5.5vh, 6vw)'};
+  flex-right {
+    margin: auto;
+    width: 600px;
+    a {
+      margin: 0 15px;
+      &.active {
+        font-weight: bold;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    &:hover {
-      text-decoration: underline;
-    }
-    margin: 0 15px;
   }
 }
