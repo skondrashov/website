@@ -9,7 +9,7 @@ export default () =>
 
     <section>
       <h2>Web Development</h2>
-      <p>Nearly all of my professional career has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SASS</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components.</p>
+      <p>Nearly all of my professional work has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SASS</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components.</p>
     </section>
 
     <section>
