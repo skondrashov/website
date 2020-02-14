@@ -1,20 +1,28 @@
 nav {
-  padding: 1.5vh 0;
+  height: 7vh;
+  font-size: #{'min(36px, 6vw)'};
   text-align: center;
-  background-color: $dark;
-  color: white;
-  font-size: #{'min(4.5vh, 3.3vw)'};
-  flex-right {
-    width: 40vw;
-    margin: auto;
-    justify-content: center;
-    a {
-      flex:.26;
-      &.active {
-        font-weight: bold;
-      }
-      &:hover {
-        text-decoration: underline;
+  >flex-right {
+    height: 7vh;
+    color: white;
+    background-color: $dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    >flex-right {
+      width: 40vw;
+      margin: auto;
+      justify-content: center;
+      a {
+        flex:0;
+        margin: 0 1.4vw;
+        &.active {
+          font-weight: bold;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

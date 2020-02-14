@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-export default () => {
-  return (<div className="Resume">
+export default () =>
+  <flex-down class="Resume">
     <NavLink to="/">
       <flex-right class="header">
         <flex-down class="contact">
@@ -15,47 +15,49 @@ export default () => {
     </NavLink>
     <flex-right class="columns">
       <flex-down>
-        <div className="section">
-          <div className="title">Home Projects</div>
+        <flex-down class="section">
+          <div className="title">Projects</div>
           <div className="item">
             <flex-down class="workplace">
-              <div class="project">Twitter Event Detector</div>
-              <a href="https://github.com/tkondrashov/ThisMinute" class="dates">github.com/tkondrashov/ThisMinute</a>
+              <div className="project">Personal React Website</div>
+              <a href="https://github.com/tkondrashov/website">github.com/tkondrashov/website</a>
             </flex-down>
-            <div className="description">NLP deep learning system for analyzing statistically unusual patterns in geotagged tweets.</div>
+            <div className="description">This website. Written with React and SASS, with a couple of HTML5 custom elements.</div>
+          </div>
+          <div className="item">
+            <flex-down class="workplace">
+              <div className="project">Twitter Event Detector</div>
+              <a href="https://github.com/tkondrashov/ThisMinute">github.com/tkondrashov/ThisMinute</a>
+            </flex-down>
+            <div className="description">Deep learning system for identifying statistically unusual patterns in geotagged tweets.</div>
             <ul>
               <li>Low level optimization through C++ STL data structures and multithreading</li>
-              <li>Twitter API Stream through PHP Phirehose library</li>
-              <li>Google Cloud Storage/Compute Engine LAMP stack</li>
             </ul>
           </div>
           <div className="item">
             <flex-down class="workplace">
-              <div class="project">Chess Evaluation Network</div>
-              <a href="https://github.com/tkondrashov/GM2020" className="dates">github.com/tkondrashov/GM2020</a>
+              <div className="project">Chess Evaluation Network</div>
+              <a href="https://github.com/tkondrashov/GM2020">github.com/tkondrashov/GM2020</a>
             </flex-down>
-            <div class="description">Evaluation network for chess positions based on CNN techniques.</div>
-            <ul>
-              <li>Python with Keras for data analysis and C++ for data generation</li>
-            </ul>
+            <div className="description">Neural network for chess position evaluation based on Computer Vision techniques.</div>
           </div>
-        </div>
-        <div class="section">
-          <div class="title">Education</div>
-          <div class="item">
-            <div class="workplace">
+        </flex-down>
+        <flex-down class="section">
+          <div className="title">Education</div>
+          <div className="item">
+            <div className="workplace">
               <div>University of Michigan, CSE</div>
-              <div class="dates">2013</div>
+              <div className="dates">2013</div>
             </div>
-            <div class="workplace">
+            <div className="workplace">
               <div>Washtenaw Comm. College</div>
-              <div class="dates">2010</div>
+              <div className="dates">2010</div>
             </div>
           </div>
-        </div>
+        </flex-down>
       </flex-down>
       <flex-down>
-        <div className="section">
+        <flex-down class="section">
           <div className="title">Experience</div>
           <div className="item">
             <div className="workplace">
@@ -90,7 +92,7 @@ export default () => {
               <div className="nexient-description">Took ownership of full-stack projects for a retail website</div>
               <ul>
                 <li>Designed and developed customer-facing features</li>
-                <li>Linux, MySQL, PHP, Zend, Cron, Javascript, SCSS, JQuery</li>
+                <li>Linux, MySQL, PHP, Cron, Javascript, SCSS, JQuery</li>
               </ul>
             </div>
             <div className="nexient-item">
@@ -98,38 +100,34 @@ export default () => {
               <div className="nexient-description">Front and back-end engineering for an ecommerce website.</div>
               <ul>
                 <li>Vue.js app for room reservation using voice recognition</li>
-                <li>Linux, MySQL, PHP, Zend, Cron, Javascript, SCSS, JQuery</li>
               </ul>
             </div>
           </div>
           <div className="item">
             <div className="workplace">
-              <div className="project">Software Engineer, Barracuda Networks in Ann Arbor, MI</div>
+              <div className="project">Software Engineer at Barracuda in Ann Arbor, MI</div>
               <div className="dates">06/14 - 05/15</div>
             </div>
             <div className="description">Developed features for the Barracuda Backup Appliance.</div>
             <ul>
-              <li>Refactored and optimized PHP backend code for the web interface</li>
+              <li>Refactored and optimized PHP code for the web interface</li>
               <li>Performed SQL database maintenance and interfacing</li>
               <li>Identified performance issues through customer collaboration</li>
             </ul>
           </div>
-        </div>
+        </flex-down>
       </flex-down>
     </flex-right>
-    <div className="section">
-      <div className="title">Home Projects</div>
-      <div className="item">
-        <div className="workplace">
-          <div className="project">Twitter Event Detector</div>
-          <div className="dates">github.com/tkondrashov/ThisMinute</div>
-        </div>
-        <div className="description">NLP deep learning system for analyzing statistically unusual patterns in geotagged tweets.</div>
-        <ul>
-          <li>Low level optimization through C++ STL data structures and multithreading</li>
-          <li>Twitter API Stream through PHP Phirehose library</li>
-        </ul>
+    <flex-down class="section">
+      <div className="title">Code Samples</div>
+      <div className="item samples">
+        <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">Custom Elements, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SASS, </a>
+        <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/pericog.cpp">C++, </a>
+        <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/models/pericog.py">Python, </a>
+        <a href="https://github.com/tkondrashov/GM2020/blob/master/chess.ipynb">Keras</a>
       </div>
-    </div>
-  </div>);
-};
+    </flex-down>
+  </flex-down>
+;
