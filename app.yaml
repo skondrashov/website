@@ -4,10 +4,12 @@ runtime: nodejs10
 
 # [START handlers]
 handlers:
-- url: /
+- url: /[a-z]*
+  secure: always
   static_files: build/index.html
   upload: build/index.html
 
 - url: /
+  secure: always
   static_dir: build
 # [END handlers]
