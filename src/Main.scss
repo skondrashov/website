@@ -56,15 +56,15 @@ main {
     background-color: $offblack;
     section {
       &:hover {
-        background-color: $dark;
+        background-color: black;
       }
       a:hover {
         color: $accent;
       }
     }
     h2 {
-      color: black;
-      background-color: $accent;
+      color: white;
+      background-color: $dark;
     }
   }
 }
