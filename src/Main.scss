@@ -28,6 +28,9 @@ main {
       font-size: #{'max(14px, 2.15vh)'};
       padding: 2.5vh 2.2vh;
     }
+    &:last-child {
+      padding-bottom: 10vh;
+    }
   }
 }
 
