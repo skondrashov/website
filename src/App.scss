@@ -9,3 +9,32 @@
 .App {
   font-family: 'Roboto', sans-serif;
 }
+
+#darkmode {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 10vh;
+  height: 10vh;
+  background-image: -webkit-linear-gradient(45deg, $dark 50%, transparent 50%);
+  >div {
+    position: fixed;
+    font-size: 3vh;
+  }
+}
+
+.light #darkmode>div {
+  left: .9vh;
+  bottom: 1.6vh;
+  &::after {
+    content: "🌙";
+  }
+}
+
+.dark #darkmode>div {
+  left: 1vh;
+  bottom: 1.5vh;
+  &::after {
+    content: "🌞";
+  }
+}

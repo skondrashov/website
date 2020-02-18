@@ -9,14 +9,17 @@ export default () =>
 
     <section>
       <h2>Web Development</h2>
-      <p>Nearly all of my professional work has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SASS</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components.</p>
+      <p>Nearly all of my professional work has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">Sass</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components. Take a look at <NavLink to="/about">the About page</NavLink> for a detailed desciption of the technologies used to make this site.</p>
     </section>
 
     <section>
       <h2>Machine Learning</h2>
-      <p>I got my start with machine learning several years ago when I came up with a project (later called ThisMinute) to analyze Tweets based on whether they seemed to be about a real life event. I learned that this was a sentiment analysis task, and tried to solve it using a clustering algorithm, to some success. This project bears some of <a href="https://github.com/tkondrashov/thisminute/blob/master/brain/pericog.cpp">my best C++ code</a> as well as some of <a href="https://github.com/tkondrashov/thisminute/blob/master/brain/models/pericog.py">my best Python code</a>.</p>
+      <p>I got my start with machine learning in 2015 when I came up with a project (later named ThisMinute) to analyze Tweets based on whether they seemed to be about a real life event. I learned that this was a sentiment analysis task, and tried to solve it using a clustering algorithm, to some success. This project bears some of <a href="https://github.com/tkondrashov/thisminute/blob/master/brain/pericog.cpp">my best C++ code</a> as well as some of <a href="https://github.com/tkondrashov/thisminute/blob/master/brain/models/pericog.py">my best Python code</a>.</p>
       <p>My most recent ML passion project is a chess engine called GM2020, which I am using to apply abstract concepts to deep learning and explore the propagation of information through CNN architectures. It contains <a href="https://github.com/tkondrashov/GM2020/blob/master/chess.ipynb">a Jupyter Notebook using Python with Keras</a> and some <a href="https://github.com/tkondrashov/GM2020/blob/master/positions.cc">more C++ code.</a></p>
-      </section>
+    </section>
+
+    <section>
+    </section>
 
     <section>
       <h2>Online Presence</h2>

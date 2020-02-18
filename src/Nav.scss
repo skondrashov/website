@@ -1,21 +1,19 @@
 nav {
   height: 7vh;
   font-size: #{'min(36px,7vw)'};
+  letter-spacing: #{'min(5px,1vw)'};
   text-align: center;
   >flex-right {
     height: 7vh;
-    color: white;
-    background-color: $dark;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     >flex-right {
-      width: 40vw;
       margin: auto;
       justify-content: center;
       a {
-        flex:0;
+        flex:.12;
         margin: 0 1.4vw;
         &.active {
           font-weight: bold;
@@ -25,5 +23,19 @@ nav {
         }
       }
     }
+  }
+}
+
+.light {
+  nav>flex-right {
+    color: white;
+    background-color: $dark;
+  }
+}
+
+.dark {
+  nav>flex-right {
+    color: white;
+    background-color: black;
   }
 }
