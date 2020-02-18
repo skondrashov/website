@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default () =>
-  <div className="Home">
+  <div className="Home feed">
     <section>
       <p>I'm Timofey Kondrashov. Welcome to my resume site! I tinker with websites and AI for a living and for fun. This website is about some of the things I've made or learned!</p>
     </section>
