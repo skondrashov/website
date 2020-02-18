@@ -6,7 +6,7 @@ export default () =>
     <NavLink to="/">
       <flex-right class="header">
         <flex-down class="contact">
-          <div className="website"><div>tkondrashov.net</div></div>
+          <div className="website"><div>⬅ tkondrashov.net</div></div>
           <div><div>tkondrashov@gmail.com</div></div>
           <div><div>(734) 634-8753</div></div>
         </flex-down>
@@ -22,7 +22,7 @@ export default () =>
               <div className="project">Personal React Website</div>
               <a href="https://github.com/tkondrashov/website">github.com/tkondrashov/website</a>
             </flex-down>
-            <div className="description">This website. Written with React and SASS, with a couple of HTML5 custom elements.</div>
+            <div className="description">This website. Written with React and SCSS, with a couple of HTML5 custom elements.</div>
           </div>
           <div className="item">
             <flex-down class="workplace">
@@ -66,25 +66,25 @@ export default () =>
             </div>
             <div className="description">Data warehousing and analysis for a retail outlet</div>
             <ul>
-              <li>Curated a database of 24 million customer records</li>
               <li>Led development of customer email segmentation pipeline</li>
+              <li>Curated a database of 24 million customer records</li>
               <li>Analyzed and retrieved data for company stakeholders</li>
               <li>Python, Alooma, Snowflake, MySQL, Looker</li>
             </ul>
           </div>
           <div className="item">
             <div className="workplace">
-              <div className="project">Software Engineer at Nexient in Ann Arbor, MI</div>
+              <div className="project">Senior Developer at Nexient in Ann Arbor, MI</div>
               <div className="dates">08/16 - 04/19</div>
             </div>
-            <div className="description">Architected software for enterprise clients using Agile systems</div>
+            <div className="description">Architected enterprise software and mentored developers</div>
             <div className="nexient-item">
               <div className="nexient-workplace">Client: Williams-Sonoma International</div>
               <div className="nexient-description">Engineered high traffic ecommerce websites</div>
               <ul>
-                <li>Updated legacy website into a Single Page Application</li>
                 <li>Trained 100+ engineers in single-page architecture</li>
-                <li>React, ES6, Dojo, SASS, Web-components</li>
+                <li>Updated legacy website into a Single Page Application</li>
+                <li>React, ES6, Dojo, Sass, Web-components</li>
               </ul>
             </div>
             <div className="nexient-item">
@@ -97,10 +97,7 @@ export default () =>
             </div>
             <div className="nexient-item">
               <div className="nexient-workplace">Hackathon Project: Room Reservation App</div>
-              <div className="nexient-description">Front and back-end engineering for an ecommerce website.</div>
-              <ul>
-                <li>Vue.js app for room reservation using voice recognition</li>
-              </ul>
+              <div className="nexient-description">Vue.js app for room reservation using voice recognition</div>
             </div>
           </div>
           <div className="item">
@@ -108,7 +105,7 @@ export default () =>
               <div className="project">Software Engineer at Barracuda in Ann Arbor, MI</div>
               <div className="dates">06/14 - 05/15</div>
             </div>
-            <div className="description">Developed features for the Barracuda Backup Appliance.</div>
+            <div className="description">Developed features for the Barracuda Backup Appliance</div>
             <ul>
               <li>Refactored and optimized PHP code for the web interface</li>
               <li>Performed SQL database maintenance and interfacing</li>
@@ -123,11 +120,14 @@ export default () =>
       <div className="item samples">
         <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React, </a>
         <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">Custom Elements, </a>
-        <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SASS, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SCSS, </a>
         <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/pericog.cpp">C++, </a>
         <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/models/pericog.py">Python, </a>
         <a href="https://github.com/tkondrashov/GM2020/blob/master/chess.ipynb">Keras</a>
       </div>
+    </flex-down>
+    <flex-down class="section download">
+      <div className="title"><a href="/resume.pdf">⤓ Download Printable PDF</a></div>
     </flex-down>
   </flex-down>
 ;
