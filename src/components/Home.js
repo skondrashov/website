@@ -9,7 +9,7 @@ export default () =>
 
     <section>
       <h2>Web Development</h2>
-      <p>Nearly all of my professional work has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">Sass</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components. Take a look at <NavLink to="/about">the About page</NavLink> for a detailed desciption of the technologies used to make this site.</p>
+      <p>Nearly all of my professional work has been in web development. I made this website to have some code samples of my <a href="https://github.com/tkondrashov/website/blob/master/src/components/App.js">React/JS</a> and <a href="https://github.com/tkondrashov/website/blob/master/src/components/styles/Resume.scss">SCSS</a> work and worked in a couple of <a href="https://github.com/tkondrashov/website/blob/master/src/components/flexElements.js">native Web Components</a> as well. I got exposure to all major frameworks during my time at Nexient, but ended up learning the most about React and regular JS, including Web Components. Take a look at <NavLink to="/about">the About page</NavLink> for a detailed desciption of the technologies used to make this site.</p>
     </section>
 
     <section>
@@ -23,8 +23,9 @@ export default () =>
 
     <section>
       <h2>Online Presence</h2>
-      <p>My most notable contribution to the online community is probably a <a href="https://stackoverflow.com/a/54819633/3648957">Stackoverflow answer discussing the getElement and querySelector APIs</a>. I put a lot of time into benchmarking and researching the differences after seeing performance issues on a work project, and found some behavior nobody seemed to be aware of, and it seems it really helped some people who came across it.</p>
-      </section>
+      <p>One of my contributions to the online community is <a href="https://stackoverflow.com/a/54819633/3648957">this Stackoverflow answer</a> discussing the getElement and querySelector APIs in client-side JS. I put a lot of time into benchmarking and researching the differences after seeing performance issues on a work project and found some behavior nobody seemed to be aware of, and it seems it really helped some people who came across it.</p>
+      <p>I have made some contributions across open source projects, including minor contributions to Tensorflow and rocket.rs.</p>
+    </section>
 
     <section>
       <h2>More</h2>

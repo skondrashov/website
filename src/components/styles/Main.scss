@@ -3,6 +3,7 @@ main {
     min-width: #{'min(500px, 100vw)'};
     width: 40vw;
     max-width: 100vw;
+    min-height: 100vh;
     margin: auto;
   }
 }

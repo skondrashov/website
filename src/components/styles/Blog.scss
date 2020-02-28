@@ -1,0 +1,13 @@
+.Blog {
+  section {
+    .info {
+      font-size: #{'max(10px, 1.5vh)'};
+      line-height: #{'max(12px, 1.5vh)'};
+      font-style: italic;
+      padding-top: 1vh;
+      time {
+        float: right;
+      }
+    }
+  }
+}

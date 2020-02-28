@@ -84,7 +84,7 @@ export default () =>
               <ul>
                 <li>Trained 100+ engineers in single-page architecture</li>
                 <li>Updated legacy website into a Single Page Application</li>
-                <li>React, ES6, Dojo, Sass, Web-components</li>
+                <li>React, ES6, Dojo, SCSS, Web-components</li>
               </ul>
             </div>
             <div className="nexient-item">
@@ -118,9 +118,9 @@ export default () =>
     <flex-down class="section">
       <div className="title">Code Samples</div>
       <div className="item samples">
-        <a href="https://github.com/tkondrashov/website/blob/master/src/App.js">React, </a>
-        <a href="https://github.com/tkondrashov/website/blob/master/src/flexElements.js">Custom Elements, </a>
-        <a href="https://github.com/tkondrashov/website/blob/master/src/Resume.scss">SCSS, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/components/withFirebase.js">React, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/components/flexElements.js">Custom Elements, </a>
+        <a href="https://github.com/tkondrashov/website/blob/master/src/components/styles/Resume.scss">SCSS, </a>
         <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/pericog.cpp">C++, </a>
         <a href="https://github.com/tkondrashov/thisminute/blob/develop/brain/models/pericog.py">Python, </a>
         <a href="https://github.com/tkondrashov/GM2020/blob/master/chess.ipynb">Keras</a>

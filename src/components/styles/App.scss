@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import './reset.scss';
+@import './variables.scss';
+@import './Nav.scss';
+@import './Main.scss';
+@import './Darkmode.scss';
+@import './Feed.scss';
+@import './Resume.scss';
+@import './Blog.scss';
+
+.App {
+  font-family: 'Roboto', sans-serif;
+}
