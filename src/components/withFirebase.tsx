@@ -14,23 +14,27 @@ const config = {
 };
 
 class Firebase {
+  db: app.firestore.Firestore;
   constructor() {
     app.initializeApp(config);
     this.db = app.firestore();
   }
 };
-const FirebaseContext = React.createContext();
+const FirebaseContext = React.createContext({} as Firebase);
 
-export default (WrappedComponent, provide=false) =>
-  provide ?
-    () =>
-      <FirebaseContext.Provider value={new Firebase()}>
-        <WrappedComponent/>
-      </FirebaseContext.Provider>
-  :
-    () =>
-      <FirebaseContext.Consumer>
-        {firebase => <WrappedComponent db={firebase.db}/>}
-      </FirebaseContext.Consumer>
+export const provideFirebase = (WrappedComponent: React.ComponentType) =>
+  () =>
+    <FirebaseContext.Provider value={new Firebase()}>
+      <WrappedComponent/>
+    </FirebaseContext.Provider>
+  ;
+;
+export const consumeFirebase = (
+  WrappedComponent: React.ComponentType<{db: app.firestore.Firestore}>
+) =>
+  () =>
+    <FirebaseContext.Consumer>
+      {firebase => <WrappedComponent db={firebase.db}/>}
+    </FirebaseContext.Consumer>
   ;
 ;

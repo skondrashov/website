@@ -6,13 +6,9 @@ export default () => {
   const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
-    if (theme === 'light') {
-      window.localStorage.setItem('theme', 'dark')
-      setTheme('dark')
-    } else {
-      window.localStorage.setItem('theme', 'light')
-      setTheme('light')
-    }
+    const newTheme = (theme === 'light') ? 'dark' : 'light';
+    window.localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
   }
 
   useEffect(() => {
@@ -22,8 +18,5 @@ export default () => {
     }
   }, [])
 
-  return [
-    theme,
-    toggleTheme,
-  ]
+  return {theme, toggleTheme};
 }

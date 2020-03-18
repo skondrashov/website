@@ -1,5 +1,5 @@
 class StyledElement extends HTMLElement {
-    constructor(style) {
+    constructor(style: string) {
         super();
         this.attachShadow({mode: 'closed'}).innerHTML = `
             <style>
@@ -39,3 +39,5 @@ customElements.define('flex-down', class FlexDown extends StyledElement {
         `);
     }
 });
+
+export default {};

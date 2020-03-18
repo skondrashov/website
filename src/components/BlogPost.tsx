@@ -1,7 +1,11 @@
 import React from 'react';
 
-export default props => {
-  const items = props.data.content.map((item, i) => {
+interface Props {
+  data: firebase.firestore.DocumentData
+}
+
+export default (props: Props) => {
+  const items = props.data.content.map((item: any, i: number) => {
     const type = Object.keys(item)[0];
     const value = item[type];
     switch(type) {

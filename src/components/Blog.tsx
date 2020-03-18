@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from "react";
 import BlogPost from './BlogPost'
-import withFirebase from './withFirebase'
+import { consumeFirebase } from './withFirebase'
+import firebase from 'firebase';
 
-export default withFirebase(props => {
-  const [posts, setPosts] = useState([]);
+type postsType = firebase.firestore.QueryDocumentSnapshot<firebase.firestore.DocumentData>[];
+export default consumeFirebase(({db}) => {
+  const [posts, setPosts] = useState<postsType>([]);
   useEffect(() => {
-    props.db
+    db
       .collection('posts')
       .orderBy('timestamp', 'desc')
       .limit(10)
       .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach(change => {
           if (change.type === 'added') {
-            setPosts(posts => {
-              posts.push(change.doc);
-              return [...posts];
-            });
+            setPosts(posts => [...posts, change.doc]);
           }
         });
       });
-  }, [props.db]);
+  }, [db]);
   return <div className="Blog feed">
     {posts.map(post => <BlogPost key={post.id} data={post.data()}/>)}
   </div>

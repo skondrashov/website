@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from "react-router-dom";
 import Home from './Home'
 import About from './About'
-import Resume from './Resume'
+import Resume from './Resume.jsx'
 import Blog from './Blog'
 
 export default () =>
