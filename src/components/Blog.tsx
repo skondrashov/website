@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogPost from './BlogPost'
 import { consumeFirebase } from './withFirebase'
-import firebase from 'firebase';
 
 type postsType = firebase.firestore.QueryDocumentSnapshot<firebase.firestore.DocumentData>[];
 export default consumeFirebase(({db}) => {

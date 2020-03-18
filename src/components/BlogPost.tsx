@@ -5,7 +5,7 @@ interface Props {
 }
 
 export default (props: Props) => {
-  const items = props.data.content.map((item: any, i: number) => {
+  const items = props.data.content.map((item: firebase.firestore.DocumentData, i: number) => {
     const type = Object.keys(item)[0];
     const value = item[type];
     switch(type) {
