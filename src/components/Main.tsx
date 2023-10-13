@@ -1,17 +1,19 @@
-import React from 'react';
-import { Switch, Route } from "react-router-dom";
-import Home from './Home'
-import About from './About'
-import Resume from './Resume.jsx'
-import Blog from './Blog'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Resume from "./Resume.jsx";
+import Blog from "./Blog";
 
-export default () =>
+const Main = () => (
   <main>
-    <Switch>
-      <Route path="/"       component={Home} exact/>
-      <Route path="/about"  component={About}/>
-      <Route path="/resume" component={Resume}/>
-      <Route path="/blog"   component={Blog}/>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/blog" element={<Blog />} />
+    </Routes>
   </main>
-;
+);
+
+export default Main;

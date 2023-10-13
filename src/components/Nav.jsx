@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-export default () =>
+const Nav = () =>
   <nav>
     <flex-right>
       <flex-right>
@@ -13,3 +13,5 @@ export default () =>
     </flex-right>
   </nav>
 ;
+
+export default Nav;

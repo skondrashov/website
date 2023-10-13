@@ -1,25 +1,29 @@
-import './flexElements.ts'
-import React from 'react';
-import { Switch, Route } from "react-router-dom";
-import Nav from './Nav.jsx';
-import Main from './Main';
-import './styles/App.scss';
-import useDarkMode from '../useDarkMode'
-import { provideFirebase } from './withFirebase'
+import "./flexElements";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./Nav.jsx";
+import Main from "./Main";
+import "./styles/App.scss";
+import useDarkMode from "../useDarkMode";
+import { provideFirebase } from "./withFirebase";
 
 export default provideFirebase(() => {
   const darkmode = useDarkMode();
-  return <div className={`App ${darkmode.theme}`}>
-    <Switch>
-      <Route path="/resume" />
-      <Route path="/*" component={Nav}/>
-    </Switch>
-    <Main/>
-    <Switch>
-      <Route path="/resume" />
-      <Route path="/*">
-        <div id="darkmode" onClick={darkmode.toggleTheme}><div/></div>
-      </Route>
-    </Switch>
-  </div>
+  return (
+    <div className={`App ${darkmode.theme}`}>
+      <Routes>
+        <Route path="/resume" />
+        <Route path="/*" element={<Nav />} />
+      </Routes>
+      <Main />
+      <Routes>
+        <Route path="/resume" />
+        {/* <Route path="/*">
+        </Route> */}
+      </Routes>
+      <div id="darkmode" onClick={darkmode.toggleTheme}>
+        <div />
+      </div>
+    </div>
+  );
 });
